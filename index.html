@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Главная</title>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
+</head>
+
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__left">
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a class="header__logo" href="index.html">
+                    <img src="img/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="header__right">
+                <ul class="header__list">
+                    <li><a href="#services">услуги</a></li>
+                    <li><a href="#about">О компании</a></li>
+                    <li><a href="#calculator">Калькулятор</a></li>
+                    <li><a href="#feedback">Отзывы</a></li>
+                    <li><a href="#objects">Фото объектов</a></li>
+                    <li><a href="#contacts">Обратная Связь</a></li>
+                </ul>
+                <div class="header__group">
+                    <button class="header__btn btn btn-blue" data-modal="contactModal">
+                        <span>обратный звонок</span>
+                    </button>
+                    <a href="" class="header__social">
+                        <img src="img/whatsapp.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="header-mob">
+                <div class="header-mob__group">
+                    <button class="header-mob__close btn">
+                        <img src="img/close.svg" alt="">
+                    </button>
+                    <ul class="header__list">
+                        <li><a href="#services">услуги</a></li>
+                        <li><a href="#about">О компании</a></li>
+                        <li><a href="#calculator">Калькулятор</a></li>
+                        <li><a href="#feedback">Отзывы</a></li>
+                        <li><a href="#objects">Фото объектов</a></li>
+                        <li><a href="#contacts">Обратная Связь</a></li>
+                    </ul>
+                </div>
+                <div class="header__group">
+                    <button class="header__btn btn btn-blue">
+                        <span>обратный звонок</span>
+                    </button>
+                    <a href="" class="header__social">
+                        <img src="img/whatsapp.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-bg"></div>
+</header>
+		<main class="content">
+			<section class="main">
+				<div class="main__img-mob">
+					<img src="img/main-img--1.webp" alt="">
+				</div>
+				<div class="main__inner">
+					<div class="main__desc">
+						<div class="main__group">
+							<h1 class="main__title h1">Организация водоснабжения <br> в Московской <br> и Калужской областях</h1>
+							<div class="main__text">Мы подбираем оптимальный источник воды — скважину или колодец, устанавливаем насосное оборудование, прокладываем трубопровод, монтируем фильтры, накопительные баки и септики.</div>
+							<button class="main__btn btn btn-blue2" data-modal="contactModal">
+								<span>Заказать консультацию</span>
+							</button>
+						</div>
+						<div class="main__img">
+							<img src="img/main-img2.svg" alt="">
+						</div>
+					</div>
+					<div class="empty-block"></div>
+				</div>
+			</section>
+			<section id="services" class="services">
+				<div class="container">
+					<div class="services__inner">
+						<div class="services__desc">
+							<div class="services__group">
+								<h2 class="services__title h2">услуги</h2>
+								<div class="services__text text">
+									<p>Наша компания предоставляет полный комплекс услуг по водоснабжению частных домов и предприятий. Мы проектируем, монтируем и обслуживаем системы водоснабжения, обеспечивая бесперебойную подачу чистой воды.</p>
+									<p>Работая с нами, вы получаете надежность, профессионализм и качественный сервис.</p>
+								</div>
+							</div>
+							<div class="services__group2">
+								<div class="services__info">Бесплатная консультация по нашим услугам. Звоните прямо сейчас!</div>
+								<div class="services__items">
+									<div class="services__item">
+										<div class="services__item-icon">
+											<img src="img/phone.svg" alt="">
+										</div>
+										<div class="services__item-desc">
+											<a class="services__item-phone" href="tel:74951584578">+7 495 158 45 78</a>
+											<div class="services__item-text">Москва и Московская область</div>
+										</div>
+									</div>
+									<div class="services__item">
+										<div class="services__item-icon">
+											<img src="img/phone.svg" alt="">
+										</div>
+										<div class="services__item-desc">
+											<a class="services__item-phone" href="tel:74951584578">+7 495 158 45 78</a>
+											<div class="services__item-text">Калуга и Калужская область</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="services__cards">
+							<div class="service-card">
+								<div class="service-card__img">
+									<img src="img/services-img.webp" alt="">
+								</div>
+								<div class="service-card__desc">
+									<div class="service-card__title">Колодец под ключ</div>
+									<div class="service-card__text">Строим колодцы под ключ: проект, копка, обустройство и подключение воды.</div>
+									<button class="service-card__btn btn btn-blue">
+										<span>Заказать</span>
+									</button>
+								</div>
+							</div>
+							<div class="service-card">
+								<div class="service-card__img">
+									<img src="img/services-img2.webp" alt="">
+								</div>
+								<div class="service-card__desc">
+									<div class="service-card__title">Септик под ключ</div>
+									<div class="service-card__text">Установка септиков под ключ: проектирование, монтаж, подключение и обслуживание системы.</div>
+									<button class="service-card__btn btn btn-blue">
+										<span>Заказать</span>
+									</button>
+								</div>
+							</div>
+							<div class="service-card">
+								<div class="service-card__img">
+									<img src="img/services-img3.webp" alt="">
+								</div>
+								<div class="service-card__desc">
+									<div class="service-card__title">Водоснабжение из колоды и скважины</div>
+									<div class="service-card__text">Водоснабжение из колодца и скважины: проектирование, монтаж и обслуживание системы водоснабжения.</div>
+									<button class="service-card__btn btn btn-blue">
+										<span>Заказать</span>
+									</button>
+								</div>
+							</div>
+							<div class="service-card">
+								<div class="service-card__img">
+									<img src="img/services-img4.webp" alt="">
+								</div>
+								<div class="service-card__desc">
+									<div class="service-card__title">Отопление</div>
+									<div class="service-card__text">Предлагаем надёжное отопление домов и объектов — тепло и комфорт круглый год.</div>
+									<button class="service-card__btn btn btn-blue">
+										<span>Заказать</span>
+									</button>
+								</div>
+							</div>
+							<div class="service-card">
+								<div class="service-card__img">
+									<img src="img/services-img5.webp" alt="">
+								</div>
+								<div class="service-card__desc">
+									<div class="service-card__title">Траншеи</div>
+									<div class="service-card__text">Профессиональное рытьё траншей для водоснабжения, отопления и других коммуникаций.</div>
+									<button class="service-card__btn btn btn-blue">
+										<span>Заказать</span>
+									</button>
+								</div>
+							</div>
+							<div class="service-card">
+								<div class="service-card__img">
+									<img src="img/services-img6.webp" alt="">
+								</div>
+								<div class="service-card__desc">
+									<div class="service-card__title">Обслуживание скважин, колодцев, септиков</div>
+									<div class="service-card__text">Предлагаем обслуживание скважин, колодцев и септиков — надежно и с гарантией качества.</div>
+									<button class="service-card__btn btn btn-blue">
+										<span>Заказать</span>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="services__mob">
+							<h2 class="services__title h2">услуги</h2>
+							<div class="services__text text">
+								<p>Наша компания предоставляет полный комплекс услуг по водоснабжению частных домов и предприятий. Мы проектируем, монтируем и обслуживаем системы водоснабжения, обеспечивая бесперебойную подачу чистой воды.</p>
+								<p>Работая с нами, вы получаете надежность, профессионализм и качественный сервис.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="about" class="about">
+				<div class="container">
+					<div class="about__inner">
+						<div class="about__img">
+							<img src="img/about-img.webp" alt="">
+							<img src="img/about-img2.webp" alt="">
+						</div>
+						<div class="about__desc">
+							<h2 class="about__title h2">о компании</h2>
+							<div class="about__text text">
+								<p>Наша компания предоставляет комплексные услуги по организации водоснабжения в Московской и Калужской областях. Мы занимаемся проектированием, монтажом и обслуживанием систем водоснабжения для частных домов, дач и коммерческих объектов. Наши специалисты обладают богатым опытом и знаниями, что позволяет нам предлагать эффективные и надежные решения для каждого клиента. Мы используем только высококачественные материалы и современное оборудование, что гарантирует долговечность и бесперебойную работу водоснабжения. Также мы предлагаем услуги по прокладке водопроводных труб, установке насосных станций, фильтров и других необходимых систем. Каждый проект мы подходим индивидуально, учитывая все особенности объекта и пожелания клиента.</p>
+								<p>Обратившись к нам, вы можете быть уверены, что получите качественное водоснабжение с гарантией и профессиональным обслуживанием.</p>
+							</div>
+							<div class="about__items">
+								<div class="about__item">
+									<div class="about__item-number">10 <span>лет</span></div>
+									<div class="about__item-text">опыта в организации водоснабжения</div>
+								</div>
+								<div class="about__item">
+									<div class="about__item-number">1000 <span>+</span></div>
+									<div class="about__item-text">успешно завершённых проектов в Московской и Калужской областях.</div>
+								</div>
+								<div class="about__item">
+									<div class="about__item-number">98 <span>%</span></div>
+									<div class="about__item-text">клиентов остаются с нами для регулярного обслуживания</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="calculator" class="calculator">
+				<div class="container">
+					<div class="calculator__inner">
+						<h2 class="calculator__title h2">Расчёт стоимости проекта</h2>
+						<div class="calculator__wrap">
+							<div class="calculator__slider">
+								<div class="swiper mySwiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="calculator__subtitle">Выберите тип услуги:</div>
+											<div class="calculator__checkboxes">
+												<div class="calculator__checkbox">
+													<input type="checkbox" checked>
+													<label class="checkbox-card">
+														<span class="checkbox-card__img">
+															<img src="img/checkbox-img.webp" alt="">
+														</span>
+														<span class="checkbox-card__title">Колодец под ключ</span>
+														<span class="checkbox-card--active">
+															<img src="img/check.svg" alt="">
+														</span>
+													</label>
+												</div>
+												<div class="calculator__checkbox">
+													<input type="checkbox">
+													<label class="checkbox-card">
+														<span class="checkbox-card__img">
+															<img src="img/checkbox-img2.webp" alt="">
+														</span>
+														<span class="checkbox-card__title">Септик под ключ</span>
+														<span class="checkbox-card--active">
+															<img src="img/check.svg" alt="">
+														</span>
+													</label>
+												</div>
+												<div class="calculator__checkbox">
+													<input type="checkbox">
+													<label class="checkbox-card">
+														<span class="checkbox-card__img">
+															<img src="img/checkbox-img3.webp" alt="">
+														</span>
+														<span class="checkbox-card__title">Водоснабжение</span>
+														<span class="checkbox-card--active">
+															<img src="img/check.svg" alt="">
+														</span>
+													</label>
+												</div>
+												<div class="calculator__checkbox">
+													<input type="checkbox">
+													<label class="checkbox-card">
+														<span class="checkbox-card__img">
+															<img src="img/checkbox-img4.webp" alt="">
+														</span>
+														<span class="checkbox-card__title">Отопление</span>
+														<span class="checkbox-card--active">
+															<img src="img/check.svg" alt="">
+														</span>
+													</label>
+												</div>
+												<div class="calculator__checkbox">
+													<input type="checkbox">
+													<label class="checkbox-card">
+														<span class="checkbox-card__img">
+															<img src="img/checkbox-img5.webp" alt="">
+														</span>
+														<span class="checkbox-card__title">Траншеи</span>
+														<span class="checkbox-card--active">
+															<img src="img/check.svg" alt="">
+														</span>
+													</label>
+												</div>
+												<div class="calculator__checkbox">
+													<input type="checkbox">
+													<label class="checkbox-card">
+														<span class="checkbox-card__img">
+															<img src="img/checkbox-img6.webp" alt="">
+														</span>
+														<span class="checkbox-card__title">Обслуживание</span>
+														<span class="checkbox-card--active">
+															<img src="img/check.svg" alt="">
+														</span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="calculator__subtitle">Выберите основные параметры колодца:</div>
+											<div class="calculator__checkboxes2">
+												<div class="calculator__checkbox">
+													<div class="checkbox-card checkbox-card2">
+														<span class="checkbox-card__img2">
+															<img src="img/checkbox-img7.svg" alt="">
+														</span>
+														<span class="checkbox-card__desc">
+															<span class="checkbox-card__title">Грубина колодца:</span>
+															<span class="checkbox-card__select custom_select">
+																<select>
+																	<option value="">5 колец</option>
+																	<option value="">5 колец</option>
+																	<option value="">5 колец</option>
+																	<option value="">5 колец</option>
+																	<option value="">5 колец</option>
+																</select>
+															</span>
+															<span class="checkbox-card__price">30 000 <span>₽</span></span>
+														</span>
+													</div>
+												</div>
+												<div class="calculator__checkbox">
+													<div class="checkbox-card checkbox-card2">
+														<span class="checkbox-card__img2">
+															<img src="img/checkbox-img8.svg" alt="">
+														</span>
+														<span class="checkbox-card__desc">
+															<span class="checkbox-card__title">Домик для колодца:</span>
+															<span class="checkbox-card__select custom_select">
+																<select>
+																	<option value="">ДК-1.2</option>
+																	<option value="">ДК-1.2</option>
+																	<option value="">ДК-1.2</option>
+																	<option value="">ДК-1.2</option>
+																	<option value="">ДК-1.2</option>
+																</select>
+															</span>
+															<span class="checkbox-card__price">13 000 <span>₽</span></span>
+														</span>
+													</div>
+												</div>
+												<div class="calculator__checkbox">
+													<div class="checkbox-card checkbox-card2">
+														<span class="checkbox-card__img2">
+															<img src="img/checkbox-img9.svg" alt="">
+														</span>
+														<span class="checkbox-card__desc">
+															<span class="checkbox-card__title">Скрепление скобами:</span>
+															<span class="checkbox-card__select custom_select">
+																<select>
+																	<option value="">4 шва</option>
+																	<option value="">4 шва</option>
+																	<option value="">4 шва</option>
+																	<option value="">4 шва</option>
+																	<option value="">4 шва</option>
+																</select>
+															</span>
+															<span class="checkbox-card__price">6 000 <span>₽</span></span>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="calculator__subtitle">Укажите тип донного фильтра:</div>
+											<div class="calculator__checkboxes3">
+												<div class="calculator__checkbox">
+													<input type="checkbox" checked>
+													<label class="checkbox-card checkbox-card3">
+														<span class="checkbox-card__img3">
+															<img src="img/checkbox-img10.svg" alt="">
+														</span>
+														<span class="checkbox-card__desc">
+															<span class="checkbox-card__title">Без донного фильтра</span>
+															<span class="checkbox-card--active">
+															<img src="img/check.svg" alt="">
+														</span>
+														</span>
+													</label>
+												</div>
+												<div class="calculator__checkbox">
+													<input type="checkbox">
+													<label class="checkbox-card checkbox-card3">
+														<span class="checkbox-card__img3">
+															<img src="img/checkbox-img11.svg" alt="">
+														</span>
+														<span class="checkbox-card__desc">
+															<span class="checkbox-card__title">Речная галька— камни</span>
+														<span class="checkbox-card__price">3 000 <span>₽</span></span>
+														</span>
+														<span class="checkbox-card--active">
+															<img src="img/check.svg" alt="">
+														</span>
+													</label>
+												</div>
+												<div class="calculator__checkbox">
+													<input type="checkbox">
+													<label class="checkbox-card checkbox-card3">
+														<span class="checkbox-card__img3">
+															<img src="img/checkbox-img12.svg" alt="">
+														</span>
+														<span class="checkbox-card__desc">
+															<span class="checkbox-card__title">Осиновый щит и галька</span>
+															<span class="checkbox-card__price">6 000 <span>₽</span></span>
+														</span>
+														<span class="checkbox-card--active">
+															<img src="img/check.svg" alt="">
+														</span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="calculator__subtitle">Укажите тип насоса:</div>
+											<div class="calculator__checkboxes3">
+												<div class="calculator__checkbox">
+													<input type="checkbox" checked>
+													<label class="checkbox-card checkbox-card3">
+														<span class="checkbox-card__img3">
+															<img src="img/checkbox-img10.svg" alt="">
+														</span>
+														<span class="checkbox-card__desc">
+															<span class="checkbox-card__title">Без установки насоса</span>
+															<span class="checkbox-card--active">
+															<img src="img/check.svg" alt="">
+														</span>
+														</span>
+													</label>
+												</div>
+												<div class="calculator__checkbox">
+													<input type="checkbox">
+													<label class="checkbox-card checkbox-card3">
+														<span class="checkbox-card__img3">
+															<img src="img/checkbox-img13.svg" alt="">
+														</span>
+														<span class="checkbox-card__desc">
+															<span class="checkbox-card__title">Съемный насос для полива</span>
+														<span class="checkbox-card__price">5 000 <span>₽</span></span>
+														</span>
+														<span class="checkbox-card--active">
+															<img src="img/check.svg" alt="">
+														</span>
+													</label>
+												</div>
+												<div class="calculator__checkbox">
+													<input type="checkbox">
+													<label class="checkbox-card checkbox-card3">
+														<span class="checkbox-card__img3">
+															<img src="img/checkbox-img14.svg" alt="">
+														</span>
+														<span class="checkbox-card__desc">
+															<span class="checkbox-card__title">Насос для дома</span>
+															<span class="checkbox-card__price">8 000 <span>₽</span></span>
+														</span>
+														<span class="checkbox-card--active">
+															<img src="img/check.svg" alt="">
+														</span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="calculator__subtitle">Допольнительно:</div>
+											<div class="calculator__checkboxes4">
+												<div class="calculator__checkbox">
+													<input type="checkbox" checked>
+													<label class="checkbox-card checkbox-card3">
+														<span class="checkbox-card__img3">
+															<img src="img/checkbox-img10.svg" alt="">
+														</span>
+														<span class="checkbox-card__desc">
+															<span class="checkbox-card__title">Без глиняного замка</span>
+															<span class="checkbox-card--active">
+															<img src="img/check.svg" alt="">
+														</span>
+														</span>
+													</label>
+												</div>
+												<div class="calculator__checkbox">
+													<input type="checkbox">
+													<label class="checkbox-card checkbox-card3">
+														<span class="checkbox-card__img3">
+															<img src="img/checkbox-img15.svg" alt="">
+														</span>
+														<span class="checkbox-card__desc">
+															<span class="checkbox-card__title">Глиняный замок</span>
+														<span class="checkbox-card__price">8 000 <span>₽</span></span>
+														</span>
+														<span class="checkbox-card--active">
+															<img src="img/check.svg" alt="">
+														</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="calculator__slider-nav">
+									<div class="calculator__slider-pagination">
+										<div class="step-pagination">
+											<span class="step-pagination__text">Шаг №</span>
+											<span class="step-pagination__number">1</span>
+										</div>
+										<div class="swiper-pagination"></div>
+									</div>
+									<div class="calculator__slider-btns">
+										<div class="swiper-button-prev">
+											<svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9.29004 16L2.00004 8.5L9.29004 1" stroke="#8E9DAD" stroke-width="2" stroke-miterlimit="10"/>
+											</svg>
+										</div>
+										<div class="swiper-button-next btn btn-blue">
+											<span>Далее</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="calculator__total">
+								<div class="calculator__total-top">
+									<div class="calculator__price-text">Итоговая стоимость:</div>
+									<div class="calculator__price">250 000 <span>₽</span></div>
+								</div>
+								<div class="calculator__total-bottom">
+									<ul class="calculator__list">
+										<li>
+											<span>Тип услуги:</span>
+											<span>Колодец под ключ</span>
+										</li>
+										<li>
+											<span>Глубина:</span>
+											<span>1 кольцо</span>
+										</li>
+										<li>
+											<span>Параметр:</span>
+											<span>Значение</span>
+										</li>
+									</ul>
+									<button class="calculator__btn btn btn-blue">
+										<span>Заказать</span>
+									</button>
+									<div class="calculator__total-img">
+										<img src="img/calculator-img.svg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="feedback" class="feedback">
+				<div class="container">
+					<div class="feedback__inner">
+						<h2 class="feedback__title h2">отзывы наших клиентов</h2>
+						<div class="feedback__text text">
+							<p>
+								Мы гордимся положительными отзывами наших клиентов, которые подтверждают высокое качество нашей работы.
+								<br>
+								Доверие и удовлетворение каждого клиента — наша главная цель. Ваше мнение важно для нас!
+							</p>
+						</div>
+						<div class="feedback__wrap">
+							<div class="feedback__slider">
+								<div class="swiper mySwiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide feedback-card">
+											<div class="feedback-card__text text">
+												<p>Помогли выкопать колодец на даче под ключ. Приятно удивила точность сроков и внимание к деталям. Все четко, кольца установили без перекосов, вода появилась быстро. Работой очень довольна!</p>
+											</div>
+											<div class="feedback-card__group">
+												<div class="feedback-card__user">
+													<i>
+														<img src="img/user.svg" alt="">
+													</i>
+													<span>Анна</span>
+												</div>
+												<div class="feedback-card__date">
+													<i>
+														<img src="img/date.svg" alt="">
+													</i>
+													<span>10 марта 2023</span>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide feedback-card">
+											<div class="feedback-card__text text">
+												<p>Делал колодец под ключ с домиком. Приятно удивила скорость: с анализа грунта до сдачи — 3 дня. Воду сразу можно пить (проверял в лаборатории). Гарантию дали на 5 лет, пока всё работает идеально.</p>
+											</div>
+											<div class="feedback-card__group">
+												<div class="feedback-card__user">
+													<i>
+														<img src="img/user.svg" alt="">
+													</i>
+													<span>Иван, г. Калуга.</span>
+												</div>
+												<div class="feedback-card__date">
+													<i>
+														<img src="img/date.svg" alt="">
+													</i>
+													<span>10 марта 2023</span>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide feedback-card">
+											<div class="feedback-card__text text">
+												<p>Помогли выкопать колодец на даче под ключ. Приятно удивила точность сроков и внимание к деталям. Все четко, кольца установили без перекосов, вода появилась быстро. Работой очень довольна!</p>
+											</div>
+											<div class="feedback-card__group">
+												<div class="feedback-card__user">
+													<i>
+														<img src="img/user.svg" alt="">
+													</i>
+													<span>Анна</span>
+												</div>
+												<div class="feedback-card__date">
+													<i>
+														<img src="img/date.svg" alt="">
+													</i>
+													<span>10 марта 2023</span>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide feedback-card">
+											<div class="feedback-card__text text">
+												<p>Делал колодец под ключ с домиком. Приятно удивила скорость: с анализа грунта до сдачи — 3 дня. Воду сразу можно пить (проверял в лаборатории). Гарантию дали на 5 лет, пока всё работает идеально.</p>
+											</div>
+											<div class="feedback-card__group">
+												<div class="feedback-card__user">
+													<i>
+														<img src="img/user.svg" alt="">
+													</i>
+													<span>Иван, г. Калуга.</span>
+												</div>
+												<div class="feedback-card__date">
+													<i>
+														<img src="img/date.svg" alt="">
+													</i>
+													<span>10 марта 2023</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<div class="feedback__slider-nav">
+								<div class="swiper-button-prev">
+									<svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9 16L1.71 8.5L9 1" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+									</svg>
+								</div>
+								<div class="swiper-button-next">
+									<svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 16L8.29 8.5L1 1" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="objects" class="objects">
+				<div class="container">
+					<div class="objects__inner">
+						<h2 class="objects__title h2">фото объектов</h2>
+						<div class="objects__text text">
+							<p>Мы успешно завершили более 500 объектов в Московской и Калужской областях. Каждый проект — это качественная и надёжная система водоснабжения, выполненная в срок и с учётом всех требований клиента.</p>
+						</div>
+						<div class="objects__wrap">
+							<div class="objects__slider">
+								<div class="swiper mySwiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide object-card">
+											<div class="object-card__img">
+												<img src="img/objects-img.webp" alt="">
+											</div>
+											<div class="object-card__desc">
+												<div class="object-card__title">Колодец в Одинцово</div>
+												<div class="object-card__text text">
+													<p>Выполнен очередной заказ в подмосковном городе Одинцово. Колодец глубиной 9 колец. Монтаж колодезного домика. Вода – техническая. Колодец без подачи воды в дом. Стоимость материалов и работ составила – 45 000 Руб. Срок выполнения заказа – 1 день.</p>
+												</div>
+												<div class="object-card__group">
+													<div class="object-card__price-wrap">
+														<div class="object-card__price-text">Бюджет:</div>
+														<div class="object-card__price">45 000 <span>₽</span></div>
+													</div>
+													<button class="object-card__btn btn btn-blue">
+														<span>Хочу такой же</span>
+													</button>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide object-card">
+											<div class="object-card__img">
+												<img src="img/objects-img.webp" alt="">
+											</div>
+											<div class="object-card__desc">
+												<div class="object-card__title">Колодец в Одинцово</div>
+												<div class="object-card__text text">
+													<p>Выполнен очередной заказ в подмосковном городе Одинцово. Колодец глубиной 9 колец. Монтаж колодезного домика. Вода – техническая. Колодец без подачи воды в дом. Стоимость материалов и работ составила – 45 000 Руб. Срок выполнения заказа – 1 день.</p>
+												</div>
+												<div class="object-card__group">
+													<div class="object-card__price-wrap">
+														<div class="object-card__price-text">Бюджет:</div>
+														<div class="object-card__price">45 000 <span>₽</span></div>
+													</div>
+													<button class="object-card__btn btn btn-blue">
+														<span>Хочу такой же</span>
+													</button>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide object-card">
+											<div class="object-card__img">
+												<img src="img/objects-img.webp" alt="">
+											</div>
+											<div class="object-card__desc">
+												<div class="object-card__title">Колодец в Одинцово</div>
+												<div class="object-card__text text">
+													<p>Выполнен очередной заказ в подмосковном городе Одинцово. Колодец глубиной 9 колец. Монтаж колодезного домика. Вода – техническая. Колодец без подачи воды в дом. Стоимость материалов и работ составила – 45 000 Руб. Срок выполнения заказа – 1 день.</p>
+												</div>
+												<div class="object-card__group">
+													<div class="object-card__price-wrap">
+														<div class="object-card__price-text">Бюджет:</div>
+														<div class="object-card__price">45 000 <span>₽</span></div>
+													</div>
+													<button class="object-card__btn btn btn-blue">
+														<span>Хочу такой же</span>
+													</button>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide object-card">
+											<div class="object-card__img">
+												<img src="img/objects-img.webp" alt="">
+											</div>
+											<div class="object-card__desc">
+												<div class="object-card__title">Колодец в Одинцово</div>
+												<div class="object-card__text text">
+													<p>Выполнен очередной заказ в подмосковном городе Одинцово. Колодец глубиной 9 колец. Монтаж колодезного домика. Вода – техническая. Колодец без подачи воды в дом. Стоимость материалов и работ составила – 45 000 Руб. Срок выполнения заказа – 1 день.</p>
+												</div>
+												<div class="object-card__group">
+													<div class="object-card__price-wrap">
+														<div class="object-card__price-text">Бюджет:</div>
+														<div class="object-card__price">45 000 <span>₽</span></div>
+													</div>
+													<button class="object-card__btn btn btn-blue">
+														<span>Хочу такой же</span>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<div class="objects__slider-nav">
+								<div class="swiper-button-prev">
+									<svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9 16L1.71 8.5L9 1" stroke="#6BC6FF" stroke-width="2" stroke-miterlimit="10"/>
+									</svg>
+								</div>
+								<div class="swiper-button-next">
+									<svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 16L8.29 8.5L1 1" stroke="#6BC6FF" stroke-width="2" stroke-miterlimit="10"/>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="contacts" class="contacts">
+				<div class="contacts__inner">
+					<div class="contacts__desc">
+						<h2 class="contacts__title h2">Контактная информация</h2>
+						<div class="contacts__group">
+							<a class="contacts__phone" href="tel:78005503863 ">
+								<i>
+									<img src="img/phone2.svg" alt="">
+								</i>
+								<span>+7 800 550 38 63 </span>
+							</a>
+							<button class="contacts__btn btn">
+								<span>Заказать звонок</span>
+							</button>
+						</div>
+						<a class="contacts__email" href="mailto:zakaz@vodamoskaluga.ru">
+							<i>
+								<img src="img/email.svg" alt="">
+							</i>
+							<span>zakaz@vodamoskaluga.ru</span>
+						</a>
+						<div class="contacts__location">
+							<i>
+								<img src="img/location.svg" alt="">
+							</i>
+							<span>197348, Россия, Санкт-Петербург, Коломяжский проспект, 10Ю</span>
+						</div>
+					</div>
+					<div id="map" class="map"></div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-top__inner">
+                <form class="form">
+                    <div class="form-wrap">
+                        <div class="form-desc">
+                            <h2 class="form-title h2">обратная связь</h2>
+                            <div class="form-subtitle">оставьте контактные данные и наши менеджеры свяжутся с вами в ближайшее время</div>
+                        </div>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <span class="input-icon">
+                                    <img src="img/user.svg" alt="">
+                                </span>
+                                <input type="text" placeholder="Ваше имя...">
+                            </div>
+                            <div class="form-group">
+                                <span class="input-icon">
+                                    <img src="img/phone3.svg" alt="">
+                                </span>
+                                <input type="tel" placeholder="Ваш телефон...">
+                            </div>
+                            <div class="form-group form-group--big">
+                                <textarea placeholder="Текст комментария..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-wrap2">
+                        <div class="form-info">Нажимая кнопку «Отправить», вы соглашаетесь на <a href="">обработку персональных данных</a></div>
+                        <button class="form-btn btn btn-blue">
+                            <span>Отправить</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom__inner">
+                <div class="footer__text">
+                    Copyright, 2017-2025. "vodamoskaluga.ru" LLC . All rights reserved
+                    <a href="">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+	</div>
+
+    <div class="modal" id="contactModal">
+        <div class="modal__dialog">
+            <button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <img src="img/close2.svg" alt="">
+            </button>
+            <div class="modal__content">
+                <div class="modal__title">Обратный звонок</div>
+                <form class="form">
+                    <div class="form-group">
+                        <span class="input-title">Ваше имя: <span>*</span></span>
+                        <input type="text">
+                    </div>
+                    <div class="form-group">
+                        <span class="input-title">Номер телефона: <span>*</span></span>
+                        <input type="tel">
+                    </div>
+                    <button class="form-btn btn btn-blue">
+                        <span>Отправить</span>
+                    </button>
+                    <div class="form-info">Нажимая кнопку «Отправить», вы соглашаетесь с <a href="">политикой конфиденциальности</a></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-accepted" id="contactModal2">
+        <div class="modal__dialog">
+            <button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <img src="img/close2.svg" alt="">
+            </button>
+            <div class="modal__content">
+                <div class="modal__icon">
+                    <img src="img/modal-icon.svg" alt="">
+                </div>
+                <div class="modal__title">Ваша заявка принята</div>
+                <div class="modal__text">
+                    <p>наши менеджеры свяжутся с вами в ближайшее время</p>
+                </div>
+                <button class="modal__btn btn btn-blue _close-modal">
+                    <span>ОК</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+	<script type="text/javascript">
+    ymaps.ready(init);
+
+    function init() {
+        var myMap = new ymaps.Map("map", {
+            center: [44.948237, 34.100327],
+            zoom: 15
+        });
+
+        var myPlacemark = new ymaps.Placemark([44.948237, 34.100327], null, {
+            iconLayout: 'default#image',
+            iconImageHref: "img/location2.svg",
+            iconImageSize: [55, 75],
+            // iconImageOffset: [-15, -44]
+        });
+        myMap.geoObjects.add(myPlacemark);
+        myMap.behaviors.disable('scrollZoom');
+
+    }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Навигация</title>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
+</head>
+
+
+<body>
+	<div class="wrapper">
+		<main class="content">
+			<section class="navigation">
+				<div class="container">
+					<div class="navigation__inner">
+						<ul class="navigation__list">
+							<li><a href="index.html">Главная</a></li>
+							<li>
+								<button class="btn btn-blue" data-modal="contactModal">
+									<span>Обратный звонок</span>
+								</button>
+							</li>
+							<li>
+								<button class="btn btn-blue" data-modal="contactModal2">
+									<span>Ваша заявка принята</span>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<div class="modal" id="contactModal">
+			<div class="modal__dialog">
+				<button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+					<img src="img/close2.svg" alt="">
+				</button>
+				<div class="modal__content">
+					<div class="modal__title">Обратный звонок</div>
+					<form class="form">
+						<div class="form-group">
+							<span class="input-title">Ваше имя: <span>*</span></span>
+							<input type="text">
+						</div>
+						<div class="form-group">
+							<span class="input-title">Номер телефона: <span>*</span></span>
+							<input type="tel">
+						</div>
+						<button class="form-btn btn btn-blue">
+							<span>Отправить</span>
+						</button>
+						<div class="form-info">Нажимая кнопку «Отправить», вы соглашаетесь с <a href="">политикой конфиденциальности</a></div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="modal modal-accepted" id="contactModal2">
+			<div class="modal__dialog">
+				<button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+					<img src="img/close2.svg" alt="">
+				</button>
+				<div class="modal__content">
+					<div class="modal__icon">
+						<img src="img/modal-icon.svg" alt="">
+					</div>
+					<div class="modal__title">Ваша заявка принята</div>
+					<div class="modal__text">
+						<p>наши менеджеры свяжутся с вами в ближайшее время</p>
+					</div>
+					<button class="modal__btn btn btn-blue _close-modal">
+						<span>ОК</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+	<script type="text/javascript">
+    ymaps.ready(init);
+
+    function init() {
+        var myMap = new ymaps.Map("map", {
+            center: [44.948237, 34.100327],
+            zoom: 15
+        });
+
+        var myPlacemark = new ymaps.Placemark([44.948237, 34.100327], null, {
+            iconLayout: 'default#image',
+            iconImageHref: "img/location2.svg",
+            iconImageSize: [55, 75],
+            // iconImageOffset: [-15, -44]
+        });
+        myMap.geoObjects.add(myPlacemark);
+        myMap.behaviors.disable('scrollZoom');
+
+    }
+</script>
+</body>
+
+</html>
+
+<style>
+	.navigation {
+		padding: 50px 0;
+	}
+	.navigation__list {
+		display: grid;
+		grid-template-columns: 100%;
+		gap: 24px;
+	}
+	.navigation__list li a {
+		font-size: 24px;
+		line-height: 140%;
+		text-decoration: unset !important;
+	}
+	.navigation__list li a:hover {
+		color: #214CD7;
+	}
+	.navigation__list li .btn-blue {
+		height: 64px;
+		padding: 5px 25px;
+		font-size: 24px;
+	}
+</style>
